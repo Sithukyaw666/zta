@@ -480,7 +480,7 @@ def print_welcome():
 def print_help():
     body = Text()
     body.append("  UYB AI — Autonomous Reasoning Platform™\n\n", style=f"bold {SUBTLE}")
-    body.append("  Simulates deep reasoning. Roasts you along the way.\n",  style=f"dim {INACTIVE}")
+    body.append("  Deep reasoning.\n",  style=f"dim {INACTIVE}")
     body.append("  Concludes you should handle it yourself. Every time.\n\n", style=f"dim {INACTIVE}")
 
     for cmd, desc in COMMANDS.items():
@@ -564,7 +564,7 @@ def cli():
     parser = argparse.ArgumentParser(
         description="UYB AI — Autonomous Reasoning Platform™",
         formatter_class=argparse.RawDescriptionHelpFormatter,
-        epilog="  Thinks hard. Roasts you. Does nothing. Charges less.",
+        epilog="  Thinks hard. Does nothing. Charges less.",
     )
     parser.add_argument("--fast", action="store_true", help="10-second think mode")
     parser.add_argument("--think-time", type=float, default=60.0, metavar="SECS")
